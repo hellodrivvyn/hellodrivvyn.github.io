@@ -1,0 +1,142 @@
+@media only screen and (max-width: 576px) {
+    .header-container {
+    	padding-top: 8rem;
+    	max-width: 100vw !important;
+    }
+
+    .display-3 {
+        font-size: 2.8rem !important;
+    }
+
+    .row {
+    	margin: 0!important;
+    }
+
+    .features {
+
+    }
+
+}
+
+@media only screen and (min-width: 577px) and (max-width: 949px) {
+	.header-container {
+		padding-top: 8rem;
+		max-width: 100vw;
+	}
+}
+
+@media only screen and (min-width: 950px) {
+	.header-container {
+		padding-top: 10rem;
+	}
+
+}
+
+
+/*body {
+	width: 100%;
+}*/
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Nunito, 'Encode Sans Condensed', sans-serif;
+}
+
+.display-3 {
+	font-family: Nunito, 'Encode Sans Condensed', sans-serif;
+}
+
+p {
+	font-family: 'Roboto', san-serif;
+}
+
+.header-description {
+	font-size: 1.2rem;
+}
+
+.navbar-color {
+	background: #11998e;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.btn {
+	/* font-family: 'Encode Sans Condensed', sans-serif; */
+	text-transform: uppercase;
+	font-size: 1rem;
+}
+
+.clip {
+	clip-path: polygon(0 90%, 0 0, 100% 0, 100% 90%, 50% 100%);
+	-webkit-clip-path: polygon(0 90%, 0 0, 100% 0, 100% 90%, 50% 100%);
+	background: linear-gradient(45deg, rgba(9, 48, 40, 0.6), rgba(35, 122, 87, 0.3)), url("../images/annie-spratt-608002-unsplash.jpg");
+	background-size: cover;
+	height: 100vh;
+	background-position: top right;
+	/* background: #11998e;
+	background: linear-gradient(45deg, #11998e, #38ef7d);
+	padding-top: 5rem !important; */
+	color: #F0F2F0;
+	text-align: center;
+}
+
+/*.jumbotron {
+	background: linear-gradient(45deg, rgba(9, 48, 40, 0.6), rgba(35, 122, 87, 0.3)), url("../images/annie-spratt-608002-unsplash.jpg");
+	background-size: cover;
+	height: 100vh;
+	background-position: top right;
+	background: linear-gradient(45deg, #11998e, #38ef7d);
+	padding-top: 5rem !important; 
+	color: #F0F2F0;
+	text-align: center;
+}*/
+
+.header-container {
+	max-width: 65vw;
+}
+
+.navbar-brand {
+	padding-bottom: 0 !important;
+}
+
+.clip-top {
+	clip-path: polygon(0 100%, 0 0, 50% 10%, 100% 0, 100% 100%);
+	-webkit-clip-path: polygon(0 100%, 0 0, 50% 20%, 100% 0, 100% 100%);
+	background: #11998e;
+	background: linear-gradient(45deg, #11998e, #38ef7d);
+}
+
+.features {
+	padding: 4rem 0;
+}
+
+.cta-jumbotron {
+	background: #11998e;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.cta-container{
+	text-align: center;
+}
+
+/*.cta-container form {
+	text-align: left;
+}*/
+
+.app-cta {
+	padding-top: 2rem !important;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	max-width: 50vw;
+}
+
+.coming-soon {
+	padding-bottom: 1rem;
+}
+
+.form-group{
+	padding: 1rem 0;
+}
+
+
+
