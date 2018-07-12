@@ -1,0 +1,42 @@
+extends layout
+
+block content
+
+  main(role='main')
+    // Main jumbotron for a primary marketing message or call to action
+    .jumbotron.jumbotron-fluid.clip
+      .container.header-container
+        h1.display-3 #{header}
+        p.header-description
+          | Drivvyn helps you create a tangible roadmap to achieve your career goals
+        p
+          a.btn.btn-light.btn-lg(href='#sign-up', role='button') Sign Up &raquo;
+    .container.features
+      .row
+        .col-md-4
+          i(data-feather='battery')
+          h2 Your Digital Career Coach
+          p
+            | We use technology to develop tailor-made goals that can help you achieve the career growth objectives of your dreams. 
+        .col-md-4
+          i(data-feather='users')
+          h2 Personalized Growth Resources
+          p
+            | We collect resources from across the web and package them for you, to inspire and coach you on your growth path.
+        .col-md-4
+          i(data-feather='trending-up')
+          h2 Network of Professionals	
+          p
+            | We connect you with relevant people who can help you (and whom you can help) because they've been where you're headed.
+    
+    .jumbotron.jumbotron-fluid.cta-jumbotron
+      .container.cta-container
+        h3#sign-up Join Drivvyn
+        p.sign-up-text
+        | While we continue to build Drivvyn, we need feedback from devoted, growth-minded folks like you looking to see a difference in your career path. Along the way, we'll provide actionable steps to help craft your career growth plan. Sound like something you'd like to be a part of? Join Drivvyn today. 
+        form(method='post', action='/')
+          .form-group
+            input.form-control(type='email', name='email', placeholder='Enter email')
+            .col-md
+          button.btn.btn-secondary(type='submit') Sign up &raquo; 
+    hr
