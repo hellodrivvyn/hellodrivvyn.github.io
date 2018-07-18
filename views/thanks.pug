@@ -1,0 +1,21 @@
+extends layout
+
+block content
+	main(role='main')
+	.jumbotron.jumbotron-fluid.full-height
+		.container
+			h1.display-4 Thanks! #{header}
+
+			form.d-flex.flex-column
+				form-group.p-2
+					label Would you rather climb the ladder or be the best at your current role?
+					input.form-control#input-1(type='text' placeholder='... or both?')
+				form-group.p-2
+					label What do you do to grow professionally?
+					textarea.form-control#input-2(placeholder='Tell us your process, no matter how crazy it seems' rows='3')
+				form-group.p-2
+					label Who do you seek growth advice from?
+					input.form-control#input-3(type='text' placeholder='Friends, family, managers, etc.')
+				button.btn.btn-secondary.p-2.w-25(type='submit' style='margin:1.2rem 0') I'm Done
+			p.disclaimer
+				i This info is solely for research purposes. We won't sell or use this data for anything other than building a great product for you and your colleagues. 

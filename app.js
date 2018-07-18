@@ -38,15 +38,17 @@ app.post('/', function(req, res) {
 	})
 	.then(() => {
 		console.log('Email added');
-		dialog.info('Check your email shortly for some fun goodies.', 'Thanks for siging up!', () => {
-			res.redirect('/');
-		})
+		res.redirect('/thanks');
 	})
 	.catch((err) => {
 		dialog.err('Try using a different email address.', 'Hmm, something is up', () => {
-			res.render('index', {title: 'Chart Your Course', header: 'Achieve Your Greatness'});
+			res.redirect('/#sign-up');
 		});
 	})
+});
+
+app.get('/thanks', function(req, res) {
+	res.render('thanks', {title: 'Drivvyn | Thank You!', header: 'Do Your Have One More Minute?'});
 });
 
 app.listen(process.env.PORT || 3000);

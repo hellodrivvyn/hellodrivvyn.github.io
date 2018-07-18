@@ -80,6 +80,14 @@ p {
 	text-align: center;
 }
 
+.full-height {
+	height:100vh;
+}
+
+.display-4 {
+	margin: 1.6rem 0 ;
+}
+
 /*.jumbotron {
 	background: linear-gradient(45deg, rgba(9, 48, 40, 0.6), rgba(35, 122, 87, 0.3)), url("../images/annie-spratt-608002-unsplash.jpg");
 	background-size: cover;
@@ -134,8 +142,12 @@ p {
 	padding-bottom: 1rem;
 }
 
-.form-group{
+.form-group {
 	padding: 1rem 0;
+}
+
+.disclaimer {
+	padding: 1.2rem 0;
 }
 
 
