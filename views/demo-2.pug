@@ -1,0 +1,24 @@
+extends layout
+
+block content
+	.container.form-container
+		.row
+			.col-sm-3
+			.col-sm-6
+				h2(style='text-align:center') Welcome to the Demo
+				.card(style='margin-top:2rem')
+					h5.card-header Let's get started ...
+					.card-body
+						h5.card-title How long have you been working?
+						p.card-text It'll be easier for us to tailor content if you tell us how many years you've been working professionally. 
+						form
+							select.custom-select(style='margin-bottom:.75rem')
+								option(selected='') Choose an option ...
+								option(value='1') Less than 1 year
+								option(value='2') 1-3 years
+								option(value='3') 4-5 years
+								option(value='4') 6-10 years
+								option(value='5') More than 10 years
+							
+							a.btn.btn-success(href='/demo-3') Submit
+			.col-sm-3

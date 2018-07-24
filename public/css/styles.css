@@ -119,10 +119,10 @@ p {
 }
 
 .cta-jumbotron {
-	background: #11998e;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to left, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to left, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #13a67e;
+	color: #FFF;
 }
+
 .cta-container{
 	text-align: center;
 }
@@ -150,5 +150,9 @@ p {
 	padding: 1.2rem 0;
 }
 
+/* DEMO CSS */
 
+.form-container {
+	padding-top: 5rem;
+}
 

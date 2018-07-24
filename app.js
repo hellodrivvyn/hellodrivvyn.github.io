@@ -3,12 +3,14 @@ var path = require('path');
 var bodyParser = require('body-parser');
 var nodemailer = require('nodemailer');
 var MailChimp = require('mailchimp-api-v3');
+var mailchimp = new MailChimp('60090b8a87835bd25300586dabed866b-us18');
 var dialog = require('dialog');
 
+var demoRouter = require('./routes/demo');
+var demoRouterTwo = require('./routes/demo-2');
+var demoRouterThree = require('./routes/demo-3');
 
 var app = express();
-
-var mailchimp = new MailChimp('60090b8a87835bd25300586dabed866b-us18');
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
@@ -17,14 +19,13 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use('/demo', demoRouter);
+app.use('/demo-2', demoRouterTwo)
+app.use('/demo-3', demoRouterThree)
 
 app.get('/', function(req, res) {
 	res.render('index', {title: 'Drivvyn | Your Career Development Assistant', header: 'Achieve Your Greatness'});
 });
-
-// app.get('/about', function(req, res) {
-// 	res.render('about', {title: 'About Career Path'});
-// });
 
 // app.get('/contact', function(req, res) {
 // 	res.render('contact', {title: 'Contact', message: 'Tell me when it\'s live!'});
@@ -42,7 +43,7 @@ app.post('/', function(req, res) {
 	})
 	.catch((err) => {
 		dialog.err('Try using a different email address.', 'Hmm, something is up', () => {
-			res.redirect('/#sign-up');
+			res.redirect('/');
 		});
 	})
 });

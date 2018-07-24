@@ -1,0 +1,20 @@
+extends layout
+
+block content
+	.container.form-container
+		.row
+			.col-sm-3
+			.col-sm-6
+				h2(style='text-align:center') Welcome to the Demo
+				.card(style='margin-top:2rem')
+					h5.card-header Let's get started ...
+					.card-body
+						h5.card-title What path do you want to be on?
+						p.card-text There's no right or wrong path. To tailor our recommendations, let us know where you see yourself heading in the future.
+						form
+							select.custom-select(style='margin-bottom:.75rem')
+								option(selected='') Pick one for now ...
+								option(value='1') Climb up the ladder
+								option(value='2') Advance my current skill set
+							a.btn.btn-success(href='/demo-2') Submit
+			.col-sm-3

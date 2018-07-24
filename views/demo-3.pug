@@ -1,0 +1,24 @@
+extends layout
+
+block content
+	.container.form-container
+		.row
+			.col-sm-3
+			.col-sm-6
+				h2(style='text-align:center') Welcome to the Demo
+				.card(style='margin-top:2rem')
+					h5.card-header Let's get started ...
+					.card-body
+						h5.card-title What industries are you most interested in?
+						p.card-text Regardless of your goal, it's helpful to know where you see yourself fitting.  
+						form
+							select.custom-select(style='margin-bottom:.75rem')
+								option(selected='') Choose an option ...
+								option(value='1') Aerospace
+								option(value='2') Business Development
+								option(value='3') Computer Software & Hardware
+								option(value='4') Dentistry
+								option(value='5') Farming
+								option(value='6') Some more ...
+							a.btn.btn-success(href='/demo-2') Submit
+			.col-sm-3
