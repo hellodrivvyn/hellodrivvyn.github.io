@@ -39,11 +39,11 @@ app.post('/', function(req, res) {
 	})
 	.then(() => {
 		console.log('Email added');
-		res.redirect('/thanks');
+		res.redirect('https://docs.google.com/forms/d/e/1FAIpQLSfLtl4Wp88uQEmh6FNdLT9Mdpfg6FD7d2NtTzIOV_ARGu5hPA/viewform');
 	})
 	.catch((err) => {
 		dialog.err('Try using a different email address.', 'Hmm, something is up', () => {
-			res.redirect('/');
+			res.redirect('/#sign-up');
 		});
 	})
 });
