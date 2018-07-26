@@ -1,9 +1,10 @@
+require('dotenv').config();
 var express = require('express');
 var path = require('path');
 var bodyParser = require('body-parser');
 var nodemailer = require('nodemailer');
 var MailChimp = require('mailchimp-api-v3');
-var mailchimp = new MailChimp('');
+var mailchimp = new MailChimp(process.env.MC_KEY);
 var dialog = require('dialog');
 
 var demoRouter = require('./routes/demo');
