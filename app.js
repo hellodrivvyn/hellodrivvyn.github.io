@@ -3,7 +3,7 @@ var path = require('path');
 var bodyParser = require('body-parser');
 var nodemailer = require('nodemailer');
 var MailChimp = require('mailchimp-api-v3');
-var mailchimp = new MailChimp('60090b8a87835bd25300586dabed866b-us18');
+var mailchimp = new MailChimp('');
 var dialog = require('dialog');
 
 var demoRouter = require('./routes/demo');
